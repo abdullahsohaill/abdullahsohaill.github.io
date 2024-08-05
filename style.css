@@ -1,0 +1,248 @@
+.heebo-body {
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Use a value from 100 to 900 */
+    font-style: normal;
+    padding-bottom: 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*navdrop styles */
+a.navbar-links {
+    color: black;
+    font-size: 20px;
+}
+
+#navbar-div {
+    display: none;
+    justify-content: flex-end;
+    column-gap: 20px;
+    padding: 10px 40px;
+    /* outline: 1px solid black; */
+    font-weight: 500;
+}
+
+/* backdrop styles */
+#backdrop {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    column-gap: 25px;
+    padding: 3% 8%;
+    margin-top: 4%;
+    text-align: center;
+}
+
+@media screen and (min-width:500px) {
+    #backdrop {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    #backdrop_left_column {
+        width: 50%;
+        color: #21243D;
+    }
+
+    #dp {
+        width: 300px;
+    }
+
+    #backdrop_right_column {
+        width: 45%;
+    }
+
+    #navbar-div {
+        display: flex;
+    }
+
+    #backdrop_left_column > h1 {
+        font-size: 44px;
+    }
+}
+
+#dp {
+    width: 300px;
+    height: auto;
+}
+
+/* #backdrop > div { */
+    /* height: 150px; */
+    /* background-color: red; */
+    /* border: 1px solid red; */
+/* } */
+
+/* backdrop left column styles */
+
+#backdrop_left_column {
+    width: 90%;
+    color: #21243D;
+}
+
+#backdrop_left_column > h1 {
+    font-weight: 700px;
+    font-size: 32px;
+}
+
+#backdrop_left_column > p {
+    font-weight: 400px;
+    font-size: 16px;
+}
+
+#backdrop_left_button {
+    background-color: #FF6464;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px; /* Adjust the value to smoothen the corners */
+    cursor: pointer;
+}
+
+/* backdrop right column styles */
+
+#backdrop_right_column {
+    /* height: 150px; */
+    width: 100%;
+    text-align: center;
+}
+
+/* recent blogs */
+
+#recent-blog-posts-section {
+    background-color: #EDF7FA;
+    padding: 2.5% 2%;
+}
+
+#recent-posts-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #recent-posts-header > h4 (now is my-h4) */
+#my-h4 {
+    font-weight: 400;
+    font-size: 40px;
+    color: #212430;
+    margin: 0;
+}
+
+/* blog cards div styling */
+
+#card-container {
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+}
+
+@media screen and (min-width:500px) {
+
+    #recent-blog-posts-section {
+        padding: 1.5% 8%
+    }
+
+    #card-container {
+        column-gap: 1.2%;
+        flex-direction: row;
+    }
+}
+
+div.card {
+    color: #212430;
+    font-weight: 400;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 22px;
+}
+
+.my-h2 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #212430;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.card > span {
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+div.card > p {
+    font-size: 16px;
+}
+
+/* featured works styling */
+section.featured-works {
+    background-color: white;
+    padding: 5% 8%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+div.horizontal-card {
+    display: flex;
+    column-gap: 3%;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 500px) {
+    div.horizontal-card {
+        row-gap: 20%;
+        flex-direction: row;
+    }
+
+    section.featured-works {
+        padding: 1% 8%;
+    }
+}
+
+span.pill {
+    background-color: #142850;
+    padding: 1.5px 15px;
+    color: white;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+span.secondary-text {
+    font-size: 16px;
+    margin-left: 18px;
+    color: #8695A4;
+}
+
+div.horizontal-card > div > p {
+    color: #21243D;
+    font-size: 16px;
+}
+
+div.horizontal-card > img {
+    border-radius: 8px;
+}
+
+/* social media section styling */
+#social-media-links-section {
+    text-align: center;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    column-gap: 6px;
+}
+
+#social-media-links-section > a > img {
+    height: 28px;
+    width: 28px;
+    border-radius: 20%;
+}
+
+#copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #212430;
+}
